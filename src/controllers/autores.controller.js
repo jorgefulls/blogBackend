@@ -5,11 +5,13 @@ const getAutores = async (req, res) => {
     res.json(autor);
 }
 
-const createAutor = async (req, res) => {
-
+const createAutores = async (req, res) => {
+    const result = await Autor.insert(req.body);
+    const autor = await Autor.selectById(result.insertId);
+    res.json(autor);
 }
 
 module.exports = {
     getAutores,
-    createAutor
+    createAutores
 }
