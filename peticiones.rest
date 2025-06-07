@@ -14,8 +14,8 @@ POST {{host}}/api/autores
 Content-Type: application/json
 
 {
-    "nombre": "FEDERICO",
-    "email": "federico@email.com",
+    "nombre": "NADIA",
+    "email": "nadia@email.com",
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv2z4qC1hGu8IOWbmE_a-7wWGMa_1Xq3n1HgrGHVNWLIe1OgvnK6klkBhvK1YGdMUP9_I&usqp=CAU"
 }
 
@@ -24,11 +24,11 @@ POST {{host}}/api/posts
 Content-Type: application/json
 
 {
-    "titulo": "Cultiva tus fresas",
-    "descripcion": "Manual de cultivo de fresas de temporada",
-    "fecha_creacion": "2024-06-09",
+    "titulo": "Reparaciones en casa",
+    "descripcion": "Si te gustó Bricomanía, este es tu rincón de bricolaje",
+    "fecha_creacion": "2024-11-19",
     "categoria": "OCIO",
-    "autores_id": 1
+    "autores_id": 2
 }
 
 ### Recuperar posts por autor concreto
