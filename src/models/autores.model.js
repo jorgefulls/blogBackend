@@ -2,7 +2,9 @@ const db = require('../config/db')
 
 const selectById = async (autorId) => {
     const [resultadoQuery] = await db.query(`
-        SELECT * FROM autores WHERE id = ?`, [autorId]
+        SELECT *
+          FROM autores
+         WHERE id = ?`, [autorId]
     );
     if (resultadoQuery.length === 0) return null;
     return resultadoQuery[0];
@@ -10,7 +12,8 @@ const selectById = async (autorId) => {
 
 const getAutores = async (req, res) => {
     const [resultadoQuery] = await db.query(`
-        SELECT * FROM autores`
+        SELECT * 
+          FROM autores`
     );
     if (resultadoQuery.length === 0) return null;
     return resultadoQuery;
