@@ -10,14 +10,16 @@ Body: XXXX
 Response: Un array de autores
 
 
-## Recuperar un Post
+## Recuperar Posts
 
 Method: GET
 Url: /api/posts
+    parámetro opcional: autor=<id>
 Headers: XXXX
 Body: XXXX
 
 Response: Un array de posts con los datos de sus autores.
+          Si la solicitud incluye el parámetro autor, los posts devueltos serán solo los de dicho autor
 
 
 ## Crear un Autor

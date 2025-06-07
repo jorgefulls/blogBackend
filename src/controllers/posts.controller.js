@@ -1,7 +1,8 @@
 const Post = require('../models/posts.model')
 
 const getPosts = async (req, res) => {
-    const post = await Post.getPosts();
+    const { autor } = req.query;
+    const post = await Post.getPosts(autor);
     res.json(post);
 }
 
