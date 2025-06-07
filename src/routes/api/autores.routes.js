@@ -1,5 +1,8 @@
 const router = require('express').Router();
 
-// Define your routes here
+const { getAutores } = require('../../controllers/autores.controller');
+
+// GET /api/autores
+router.get('/', getAutores);
 
 module.exports = router;
